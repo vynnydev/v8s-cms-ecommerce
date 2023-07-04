@@ -97,7 +97,7 @@ export default function StoreSwitcher({
           </CommandList>
           <CommandSeparator />
           <CommandList>
-          <CommandGroup>
+            <CommandGroup>
               <CommandItem
                 onSelect={() => {
                   setOpen(false)

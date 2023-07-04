@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-
 import { useStoreModal } from '@/hooks/use-store-modal'
 
 import { StoreModal } from '@/components/modals/store-modal'

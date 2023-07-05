@@ -4,17 +4,19 @@ import React from 'react'
 import { Plus } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
 
-import { Billboard } from '@prisma/client'
-
-import { Heading } from '@/components/ui/heading'
 import { Button } from '@/components/ui/button'
+import { DataTable } from '@/components/ui/data-table'
+import { Heading } from '@/components/ui/heading'
 import { Separator } from '@/components/ui/separator'
+import { ApiList } from '@/components/ui/api-list'
 
-interface IBillboardClientProps {
-  data: Billboard[]
+import { columns, BillboardColumn } from './columns'
+
+interface BillboardClientProps {
+  data: BillboardColumn[]
 }
 
-export const BillboardClient: React.FC<IBillboardClientProps> = ({ data }) => {
+export const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
   const params = useParams()
   const router = useRouter()
 
@@ -32,6 +34,10 @@ export const BillboardClient: React.FC<IBillboardClientProps> = ({ data }) => {
         </Button>
       </div>
       <Separator />
+      <DataTable searchKey="label" columns={columns} data={data} />
+      <Heading title="API" description="API Calls for Billboards" />
+      <Separator />
+      <ApiList entityName="billboards" entityIdName="billboardId" />
     </>
   )
 }

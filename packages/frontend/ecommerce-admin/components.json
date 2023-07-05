@@ -4,12 +4,12 @@
   "rsc": true,
   "tailwind": {
     "config": "tailwind.config.js",
-    "css": "app/globals.css",
+    "css": "src/app/globals.css",
     "baseColor": "slate",
     "cssVariables": true
   },
   "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils"
+    "components": "@/src/components",
+    "utils": "@/src/lib/utils"
   }
 }

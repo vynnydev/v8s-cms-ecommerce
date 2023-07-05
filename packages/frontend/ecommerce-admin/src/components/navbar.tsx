@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 
 import prismadb from '@/lib/prismadb'
 
-import { MainNav } from '@/components/ui/main-nav'
+import { MainNav } from '@/components/main-nav'
 import StoreSwitcher from './store-switcher'
 
 const Navbar = async () => {

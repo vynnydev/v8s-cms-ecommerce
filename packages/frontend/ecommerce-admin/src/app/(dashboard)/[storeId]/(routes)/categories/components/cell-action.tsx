@@ -6,15 +6,15 @@ import { Copy, Edit, MoreHorizontal, Trash } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 import { useParams, useRouter } from 'next/navigation'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/presentation/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { AlertModal } from '@/components/modals/alert-modal'
+} from '@/presentation/components/ui/dropdown-menu'
+import { AlertModal } from '@/presentation/components/modals/alert-modal'
 
 import { CategoryColumn } from './columns'
 

@@ -1,4 +1,4 @@
-import prismadb from '@/lib/prismadb'
+import prismadb from '@/infra/http/prisma/prismadb'
 
 import { ProductForm } from './components/product-form'
 

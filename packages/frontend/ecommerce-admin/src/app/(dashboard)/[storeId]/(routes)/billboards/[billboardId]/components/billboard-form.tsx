@@ -13,8 +13,8 @@ import { Billboard } from '@prisma/client'
 import { toast } from 'react-hot-toast'
 import { Trash } from 'lucide-react'
 
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
+import { Input } from '@/presentation/components/ui/input'
+import { Button } from '@/presentation/components/ui/button'
 import {
   Form,
   FormControl,
@@ -22,11 +22,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Separator } from '@/components/ui/separator'
-import { Heading } from '@/components/ui/heading'
-import { AlertModal } from '@/components/modals/alert-modal'
-import ImageUpload from '@/components/ui/image-upload'
+} from '@/presentation/components/ui/form'
+import { Separator } from '@/presentation/components/ui/separator'
+import { Heading } from '@/presentation/components/ui/heading'
+import { AlertModal } from '@/presentation/components/modals/alert-modal'
+import ImageUpload from '@/presentation/components/ui/image-upload'
 
 const formSchema = z.object({
   label: z.string().min(1),

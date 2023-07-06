@@ -1,6 +1,6 @@
 import { format } from 'date-fns'
 
-import prismadb from '@/lib/prismadb'
+import prismadb from '@/infra/http/prisma/prismadb'
 
 import { SizeColumn } from './components/columns'
 import { SizesClient } from './components/client'

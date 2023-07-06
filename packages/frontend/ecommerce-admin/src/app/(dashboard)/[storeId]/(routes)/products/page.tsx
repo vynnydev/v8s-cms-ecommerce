@@ -1,7 +1,7 @@
 import { format } from 'date-fns'
 
-import prismadb from '@/lib/prismadb'
-import { formatter } from '@/lib/utils'
+import prismadb from '@/infra/http/prisma/prismadb'
+import { formatter } from '@/utils/lib/utils'
 
 import { ProductsClient } from './components/client'
 import { ProductColumn } from './components/columns'

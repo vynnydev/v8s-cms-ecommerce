@@ -4,11 +4,11 @@ import React from 'react'
 import { Plus } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
 
-import { Button } from '@/components/ui/button'
-import { DataTable } from '@/components/ui/data-table'
-import { Heading } from '@/components/ui/heading'
-import { Separator } from '@/components/ui/separator'
-import { ApiList } from '@/components/ui/api-list'
+import { Button } from '@/presentation/components/ui/button'
+import { DataTable } from '@/presentation/components/ui/data-table'
+import { Heading } from '@/presentation/components/ui/heading'
+import { Separator } from '@/presentation/components/ui/separator'
+import { ApiList } from '@/presentation/components/ui/api-list'
 
 import { columns, ColorColumn } from './columns'
 

@@ -10,8 +10,8 @@ import { Trash } from 'lucide-react'
 import { Color } from '@prisma/client'
 import { useParams, useRouter } from 'next/navigation'
 
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
+import { Input } from '@/presentation/components/ui/input'
+import { Button } from '@/presentation/components/ui/button'
 import {
   Form,
   FormControl,
@@ -19,10 +19,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Separator } from '@/components/ui/separator'
-import { Heading } from '@/components/ui/heading'
-import { AlertModal } from '@/components/modals/alert-modal'
+} from '@/presentation/components/ui/form'
+import { Separator } from '@/presentation/components/ui/separator'
+import { Heading } from '@/presentation/components/ui/heading'
+import { AlertModal } from '@/presentation/components/modals/alert-modal'
 
 const formSchema = z.object({
   name: z.string().min(2),

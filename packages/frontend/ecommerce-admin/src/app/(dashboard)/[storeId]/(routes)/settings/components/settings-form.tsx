@@ -12,9 +12,9 @@ import { Store } from '@prisma/client'
 import { Trash } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 
-import { Heading } from '@/components/ui/heading'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Heading } from '@/presentation/components/ui/heading'
+import { Button } from '@/presentation/components/ui/button'
+import { Input } from '@/presentation/components/ui/input'
 
 import {
   Form,
@@ -23,12 +23,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Separator } from '@/components/ui/separator'
+} from '@/presentation/components/ui/form'
+import { Separator } from '@/presentation/components/ui/separator'
 
-import { AlertModal } from '@/components/modals/alert-modal'
-import { ApiAlert } from '@/components/ui/api-alert'
-import { useOrigin } from '@/hooks/use-origin'
+import { AlertModal } from '@/presentation/components/modals/alert-modal'
+import { ApiAlert } from '@/presentation/components/ui/api-alert'
+import { useOrigin } from '@/presentation/hooks/use-origin'
 
 interface ISettingsFormProps {
   initialData: Store

@@ -2,8 +2,8 @@ import React from 'react'
 import { Inter } from 'next/font/google'
 
 import { ClerkProvider } from '@clerk/nextjs'
-import { ToastProvider } from '@/providers/toast-provider'
-import { ModalProvider } from '@/providers/modal-provider'
+import { ToastProvider } from '@/presentation/providers/toast-provider'
+import { ModalProvider } from '@/presentation/providers/modal-provider'
 
 import './globals.css'
 

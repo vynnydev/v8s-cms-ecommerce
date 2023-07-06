@@ -1,5 +1,5 @@
 import React from 'react'
-import prismadb from '@/lib/prismadb'
+import prismadb from '@/infra/http/prisma/prismadb'
 import { auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
 

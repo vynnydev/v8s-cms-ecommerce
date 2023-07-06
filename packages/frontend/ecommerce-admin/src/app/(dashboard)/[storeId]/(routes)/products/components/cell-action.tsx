@@ -7,15 +7,15 @@ import { useParams, useRouter } from 'next/navigation'
 
 import { toast } from 'react-hot-toast'
 
-import { AlertModal } from '@/components/modals/alert-modal'
-import { Button } from '@/components/ui/button'
+import { AlertModal } from '@/presentation/components/modals/alert-modal'
+import { Button } from '@/presentation/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@/presentation/components/ui/dropdown-menu'
 
 import { ProductColumn } from './columns'
 

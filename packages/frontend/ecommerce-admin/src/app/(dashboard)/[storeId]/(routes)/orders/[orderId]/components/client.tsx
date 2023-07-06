@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
 
-import { DataTable } from '@/components/ui/data-table'
-import { Heading } from '@/components/ui/heading'
-import { Separator } from '@/components/ui/separator'
+import { DataTable } from '@/presentation/components/ui/data-table'
+import { Heading } from '@/presentation/components/ui/heading'
+import { Separator } from '@/presentation/components/ui/separator'
 
 import { columns, OrderColumn } from './columns'
 

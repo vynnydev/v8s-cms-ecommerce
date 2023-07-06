@@ -1,5 +1,5 @@
 import { format } from 'date-fns'
-import prismadb from '@/lib/prismadb'
+import prismadb from '@/infra/http/prisma/prismadb'
 
 import { CategoryClient } from './components/client'
 import { CategoryColumn } from './components/columns'

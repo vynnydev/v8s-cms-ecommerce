@@ -1,11 +1,11 @@
 import React from 'react'
-import { Billboard } from '@/domain/entities/billboard'
+import { Billboard as BillboardEntity } from '@/domain/entities/billboard'
 
 interface IBillboardProps {
-  data: Billboard
+  data: BillboardEntity
 }
 
-const BillboardPage: React.FC<IBillboardProps> = ({ data }) => {
+const Billboard: React.FC<IBillboardProps> = ({ data }) => {
   return (
     <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden">
       <div
@@ -22,4 +22,4 @@ const BillboardPage: React.FC<IBillboardProps> = ({ data }) => {
   )
 }
 
-export default BillboardPage
+export default Billboard

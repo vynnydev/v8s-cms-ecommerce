@@ -1,21 +1,21 @@
-/* eslint-disable @next/next/no-async-client-component */
-'use client'
 import React from 'react'
 
-import getProduct from '@/infra/http/actions/get-product'
-import getProducts from '@/infra/http/actions/get-products'
 import ProductList from '@/presentation/components/product-list'
-import Container from '@/presentation/components/ui/container'
 import Gallery from '@/presentation/components/gallery'
 import Info from '@/presentation/components/info'
+import getProduct from '@/infra/http/actions/get-product'
+import getProducts from '@/infra/http/actions/get-products'
+import Container from '@/presentation/components/ui/container'
 
-interface IProductPageProps {
+export const revalidate = 0
+
+interface ProductPageProps {
   params: {
     productId: string
   }
 }
 
-const ProductPage: React.FC<IProductPageProps> = async ({ params }) => {
+const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   const product = await getProduct(params.productId)
   const suggestedProducts = await getProducts({
     categoryId: product?.category?.id,

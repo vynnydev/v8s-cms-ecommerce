@@ -1,6 +1,10 @@
 /* eslint-disable no-undef */
 import Footer from '@/presentation/components/footer'
 import Navbar from '@/presentation/components/navbar'
+
+import ModalProvider from '@/presentation/providers/modal-provider'
+import ToastProvider from '@/presentation/providers/toast-provider'
+
 import './globals.css'
 import { Urbanist } from 'next/font/google'
 
@@ -19,6 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <ToastProvider />
+        <ModalProvider />
         <Navbar />
         {children}
         <Footer />

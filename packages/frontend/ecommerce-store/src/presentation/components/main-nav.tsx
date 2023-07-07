@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { cn } from '@/utils/lib/utils'
-import { Category } from '@/core/domain/entities'
+import { Category } from '@/domain/entities/category'
 
 interface MainNavProps {
   data: Category[]

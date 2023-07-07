@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import Footer from '@/presentation/components/footer'
+import Navbar from '@/presentation/components/navbar'
 import './globals.css'
 import { Urbanist } from 'next/font/google'
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Navbar />
         {children}
         <Footer />
       </body>

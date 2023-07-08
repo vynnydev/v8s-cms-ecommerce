@@ -4,6 +4,7 @@ import Navbar from '@/presentation/components/navbar'
 
 import ModalProvider from '@/presentation/providers/modal-provider'
 import ToastProvider from '@/presentation/providers/toast-provider'
+import { ThemeProvider } from '@/presentation/providers/theme-provider'
 
 import './globals.css'
 import { Urbanist } from 'next/font/google'
@@ -23,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <ToastProvider />
-        <ModalProvider />
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ToastProvider />
+          <ModalProvider />
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )
